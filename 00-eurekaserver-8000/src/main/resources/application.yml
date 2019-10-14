@@ -1,0 +1,15 @@
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: localhost  #指定EurekaServer的主机名
+  client:
+    register-with-eureka: false   #指定是否想Eureka中注册该主机
+    fetch-registry: false         #指定是否从Eureka中获取注册表
+    service-url:
+     #defaultZone: http://localhost:8000/eureka   #暴露Eureka服务注册中西
+     defaultZone: http://localhost:8000/eureka,http://localhost:8001/eureka  #暴露Eureka服务注册中西
+
+
+

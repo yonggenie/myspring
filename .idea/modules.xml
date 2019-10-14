@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00-eurekaserver-8000/00-eurekaserver-8000.iml" filepath="$PROJECT_DIR$/00-eurekaserver-8000/00-eurekaserver-8000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-consumer-8080/01-consumer-8080.iml" filepath="$PROJECT_DIR$/01-consumer-8080/01-consumer-8080.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-eurekaserver-8001/02-eurekaserver-8001.iml" filepath="$PROJECT_DIR$/01-eurekaserver-8001/02-eurekaserver-8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-provider-8081/01-provider-8081.iml" filepath="$PROJECT_DIR$/01-provider-8081/01-provider-8081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-provider-8082/02-provider-8082.iml" filepath="$PROJECT_DIR$/02-provider-8082/02-provider-8082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myspring.iml" filepath="$PROJECT_DIR$/.idea/myspring.iml" />
+    </modules>
+  </component>
+</project>
