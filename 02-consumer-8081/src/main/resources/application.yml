@@ -1,0 +1,35 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: gee-consumer-depart
+
+eureka:
+  #指定eureka服务中心
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+     # defaultZone: http://localhost:8000/eureka,http://localhost:8001/eureka
+
+
+
+
+
+
+#Feign 文件的修改
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000   #指定Feign连接提供者的超时时间
+        readTimeout: 5000      #指定Feign从请求到获取提供者响应的超时时间
+
+  compression:
+    request:
+      enabled: true      #开启对请求的压缩
+      #指定哪些文件MIME类型的文件进行压缩
+      mime-types: ["text/xml", "application/xml", "application/json"]
+      min-request-size: 2048 # 指定启用压缩的最小文件大小，单位字节
+    response:
+      enabled: true   # 开启对客户端响应的压缩
