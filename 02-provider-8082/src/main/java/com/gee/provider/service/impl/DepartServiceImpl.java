@@ -4,6 +4,7 @@ import com.gee.provider.bean.Depart;
 import com.gee.provider.repository.DepartRepository;
 import com.gee.provider.service.DepartService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +13,8 @@ import java.util.List;
 public class DepartServiceImpl implements DepartService {
     @Autowired
     private DepartRepository repository;
-
+    @Value("${server.port}")
+    private int port;
     // 插入
     @Override
     public boolean saveDepart(Depart depart) {
@@ -53,10 +55,12 @@ public class DepartServiceImpl implements DepartService {
     public Depart getDepartById(int id) {
         // repository.getOne(id)指定的id对象不存在，则会抛出异常
         if(repository.existsById(id)) {
-            return repository.getOne(id);
+            Depart depart = repository.getOne(id);
+            depart.setName(depart.getName()+"----"+port);
+            return depart;
         }
         Depart depart = new Depart();
-        depart.setName("no this depart");
+        depart.setName("no this depart" + port);
         return depart;
     }
 

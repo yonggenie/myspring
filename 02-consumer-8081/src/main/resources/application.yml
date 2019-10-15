@@ -33,3 +33,9 @@ feign:
       min-request-size: 2048 # 指定启用压缩的最小文件大小，单位字节
     response:
       enabled: true   # 开启对客户端响应的压缩
+
+#修改负载均衡策略
+gee-provider-depart:
+   ribbon: # 指定要使用的负载均衡策略
+     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
