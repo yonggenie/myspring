@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gee</groupId>
-	<artifactId>01-provider-8081</artifactId>
+	<artifactId>02-provider-8082</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>01-provider-8081</name>
+	<name>02-provider-8082</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

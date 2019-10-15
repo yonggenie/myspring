@@ -40,8 +40,8 @@ logging:
 eureka:
   client:
     service-url:
-     # defaultZone: http://localhost:8000/eureka
-      defaultZone: http://localhost:8000/eureka,http://localhost:8001/eureka
+      defaultZone: http://localhost:8000/eureka
+      #defaultZone: http://localhost:8000/eureka,http://localhost:8001/eureka
   instance:
     instance-id: gee-provider-depart-8082
 

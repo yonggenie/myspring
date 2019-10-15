@@ -1,8 +1,16 @@
 HELP.md
 target/
+pom.xml.tag
+.mvn/**
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+
+*.iws
+*.iml
+*.ipr
+
+
 
 ### STS ###
 .apt_generated
