@@ -7,11 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01-eurekaserver-8001" />
-        <module name="01-consumer-8080" />
         <module name="01-provider-8081" />
         <module name="02-consumer-8081" />
         <module name="00-eurekaserver-8000" />
-        <module name="02-provider-8082" />
+        <module name="01-consumer-8080" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +19,7 @@
       <module name="01-eurekaserver-8001" target="1.8" />
       <module name="01-provider-8081" target="1.8" />
       <module name="02-consumer-8081" target="1.8" />
+      <module name="02-consumer-8090" target="1.8" />
       <module name="02-provider-8082" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -30,6 +30,7 @@
       <module name="01-eurekaserver-8001" options="-parameters" />
       <module name="01-provider-8081" options="-parameters" />
       <module name="02-consumer-8081" options="-parameters" />
+      <module name="02-consumer-8090" options="-parameters" />
       <module name="02-provider-8082" options="-parameters" />
     </option>
   </component>
